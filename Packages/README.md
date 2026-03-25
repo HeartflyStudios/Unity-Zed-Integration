@@ -13,18 +13,16 @@ If I had just contributed and not built from scratch my brain would have taken a
 A simple tooling project to use Zed code editor with Unity projects.
 
 ## What Works:smile:  
-✅ Use Zed as external code editor in Unity with familiar UX  
-(Preferences > External Tools > External Script Editor).  
+✅ Use Zed as external code editor in Unity with familiar UX (Preferences > External Tools > External Script Editor).  
 ✅ Auto-generate .csproj/.sln files.  
 ✅ Log streaming to terminal (manual proxy on port 12345).  
 ✅ AssetDatabase auto-refresh on editor focus.  
 
 ## What Doesn't Work Yet:sad:  
-🚫 Logs dont display until you switch back to unity and allow assetdatabase refresh and domain reload.  
-🚫 Double-clicking Unity Debug logs focus Zed - but don't navigate to correct file/line/  
-🚫 Any build script for Linux or MacOS. Also, I haven't tested outside of Windows... *sorry*.  
-🚫 I didn't include any cli arguments to change the port on the proxy... woops.  
-You'll have to edit `./zed-unity-extension/proxy/src/main.rs` and .` /Packages/com.heartflystudios.zededitor/ZedLogStreamer.cs` if Port: 12345 isn't good enough for you:laughing:
+🚫 Logs display in external terminal, not in Zed UI.  
+🚫 Double-clicking Unity Debug logs focus Zed - but don't navigate to correct file/line/
+🚫 Any build script for Linux or MacOS. Also, I haven't tested outside of Windows... *sorry*.
+🚫 I didn't include any cli arguments to change the port on the proxy... woops. You'll have to edit `./zed-unity-extension/proxy/src/main.rs` if Port: 12345 isn't good enough for you:laughing:
 
 ## Installation
 

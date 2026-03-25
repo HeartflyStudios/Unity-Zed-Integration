@@ -1,0 +1,20 @@
+{
+    "name": "com.heartflystudios.zededitor",
+    "displayName": "Zed Editor",
+    "version": "0.1.0",
+    "unity": "2023.2",
+    "unityRelease": "0f1",
+    "description": "Zed code editor integration for Unity. Makes the Zed code editor get treated as a \"first-class\" code editor by the Unity Editor.\nIt works either alone or with its sister Zed Extension to bring some big improvements to working in Zed with Unity projects.\n\nFeatures:\n- Integrates Unity specific Roslyn Analyzers so that code-analysis (\"IntelliSense\") are as helpful as possible and irrelevant rules (therefore squiggly lines) are suppressed.\n- Launch Zed from Unity Editor. Automatically locates Zed installation for you.\n- Fully supports Linux, Windows and MacOS without any additional dependencies.\n- Generates solution and project files for \"Local\", \"Embedded\", \"Unity Registry\", \"Git\", \"Built-In\", \"Player\" and \"LocalTarBall\" assemblies. Just as though Unity had shipped with Zed code editor support.\n- Opens your scripts in Zed via double-clicking .cs files and/or Unity Debug Logs, and jumps to correct file/line.\n\nFeatures (when Zed Extension installed):\n- Streams Unity Debug Log to Zed editor.\n- Assets Refresh status update inside Zed editor GUI.",
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.0"
+    },
+    "author": {
+        "name": "Heartfly Studios",
+        "url": "https://github.com/HeartflyStudios",
+        "email": "production@heartflystudios.com"
+    },
+    "changelogUrl": "https://github.com/HeartflyStudios/Unity-Zed-Integration/blob/main/Packages/CHANGELOG.md",
+    "documentationUrl": "https://github.com/HeartflyStudios/Unity-Zed-Integration/blob/main/Packages/README.md",
+    "licensesUrl": "https://github.com/HeartflyStudios/Unity-Zed-Integration/blob/main/LICENSE",
+    "category": "Editor Extensions"
+}
