@@ -7,24 +7,24 @@
 I started working on this project purely because I wanted to improve my knowledge of tooling such as LSP's and Debuggers - in particular those that apply to Unity game development and the .NET SDK.   
 If I had just contributed and not built from scratch my brain would have taken a lot longer to understand everything, and I am too disorganized and novelty stimulated to be a good contributor (or maintainer for that matter). That said, if [@SuperJura](https://github.com/SuperJura) and/or [@Maligan](https://github.com/Maligan) want to hit me up to merge projects, I'm down for that now that I understand it a bit more.  
 > 
-> P.S. I also really wanted to *not* use Microsoft's VS Code and/or Visual Studio:unamused:.
+> P.S. I also really wanted to *not* use Microsoft's VS Code and/or Visual Studio.
 
 ## What is it?
 A simple tooling project to use Zed code editor with Unity projects.
 
-## What Works:smile:  
+## What Works  
 ✅ Use Zed as external code editor in Unity with familiar UX  
 (Preferences > External Tools > External Script Editor).  
 ✅ Auto-generate .csproj/.sln files.  
 ✅ Log streaming to terminal (manual proxy on port 12345).  
 ✅ AssetDatabase auto-refresh on editor focus.  
 
-## What Doesn't Work Yet:sad:  
+## What Doesn't Work Yet  
 🚫 Logs dont display until you switch back to unity and allow assetdatabase refresh and domain reload.  
 🚫 Double-clicking Unity Debug logs focus Zed - but don't navigate to correct file/line/  
 🚫 Any build script for Linux or MacOS. Also, I haven't tested outside of Windows... *sorry*.  
 🚫 I didn't include any cli arguments to change the port on the proxy... woops.  
-You'll have to edit `./zed-unity-extension/proxy/src/main.rs` and .` /Packages/com.heartflystudios.zededitor/ZedLogStreamer.cs` if Port: 12345 isn't good enough for you:laughing:
+You'll have to edit `./zed-unity-extension/proxy/src/main.rs` and .` /Packages/com.heartflystudios.zededitor/ZedLogStreamer.cs` if Port: 12345 isn't good enough for you
 
 ## Installation
 
